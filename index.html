@@ -24,27 +24,14 @@
     />
     <meta
       property="og:description"
-      content="Profesionálne priemyselné upratovanie s 20-ročnou praxou. Industriálna presnosť pre váš domov."
+      content="Profesionálne upratovanie hál, skladov a výrobných priestorov."
     />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://lovable.dev/opengraph-image-p98pog.png"
-    />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pog.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@Lovable" />
-    <meta
-      name="twitter:image"
-      content="https://lovable.dev/opengraph-image-p98pog.png"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pog.png" />
 
     <style>
       * {
@@ -52,9 +39,10 @@
         margin: 0;
         padding: 0;
       }
+
       body {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter",
-          "Segoe UI", sans-serif;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI",
+          sans-serif;
         background: linear-gradient(135deg, #020617, #0f172a);
         color: #e5e7eb;
         min-height: 100vh;
@@ -63,6 +51,7 @@
         justify-content: center;
         padding: 2rem 1.5rem;
       }
+
       .page {
         max-width: 1080px;
         width: 100%;
@@ -73,14 +62,17 @@
         display: grid;
         grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
       }
+
       @media (max-width: 900px) {
         .page {
           grid-template-columns: 1fr;
         }
       }
+
       .left {
         padding: 2.5rem;
       }
+
       .badge {
         display: inline-flex;
         align-items: center;
@@ -91,23 +83,21 @@
         letter-spacing: 0.08em;
         text-transform: uppercase;
         border: 1px solid rgba(148, 163, 184, 0.7);
-        color: #e5e7eb;
         margin-bottom: 1.25rem;
       }
+
       .badge-dot {
         width: 0.4rem;
         height: 0.4rem;
         border-radius: 999px;
         background: #22c55e;
       }
+
       h1 {
         font-size: 2.4rem;
-        line-height: 1.15;
+        line-height: 1.1;
         margin-bottom: 0.9rem;
-      }
-      h1 span {
-        color: #22c55e;
-        display: block;
+        color: #22c55e; /* GREEN MAIN TITLE */
       }
 
       .subtitle {
@@ -122,18 +112,6 @@
         gap: 1.5rem;
         margin-bottom: 2rem;
       }
-      .stat-item {
-        min-width: 120px;
-      }
-      .stat-number {
-        font-size: 1.6rem;
-        font-weight: 600;
-        color: #e5e7eb;
-      }
-      .stat-label {
-        font-size: 0.85rem;
-        color: #9ca3af;
-      }
 
       .cta-box {
         display: flex;
@@ -141,6 +119,7 @@
         gap: 1rem;
         align-items: center;
       }
+
       .cta-main {
         background: #22c55e;
         color: #052e16;
@@ -149,25 +128,19 @@
         font-weight: 600;
         font-size: 0.95rem;
         text-decoration: none;
-        border: none;
         cursor: pointer;
       }
+
       .cta-main:hover {
         background: #16a34a;
       }
 
-      .cta-sub {
-        font-size: 0.9rem;
-        color: #9ca3af;
-      }
-      .cta-sub strong {
-        color: #e5e7eb;
-      }
       .phone-link {
         color: #e5e7eb;
         text-decoration: none;
         font-weight: 600;
       }
+
       .phone-link:hover {
         text-decoration: underline;
       }
@@ -175,7 +148,7 @@
       .right {
         position: relative;
         background: radial-gradient(circle at top left, #22c55e20, transparent 60%),
-          url("./cleanit-warehouse.jpg") center/cover no-repeat;
+          url("/cleanit-warehouse.jpg") center/cover no-repeat;
         min-height: 260px;
       }
 
@@ -197,56 +170,6 @@
         flex-direction: column;
         justify-content: space-between;
       }
-
-      .tagline {
-        font-size: 0.95rem;
-        color: #e5e7eb;
-        max-width: 260px;
-      }
-
-      .pill {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.45rem;
-        padding: 0.4rem 0.9rem;
-        border-radius: 999px;
-        background: rgba(15, 23, 42, 0.85);
-        border: 1px solid rgba(148, 163, 184, 0.6);
-        font-size: 0.8rem;
-        color: #e5e7eb;
-      }
-
-      .pill-dot {
-        width: 0.45rem;
-        height: 0.45rem;
-        border-radius: 999px;
-        background: #22c55e;
-      }
-
-      .chips {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.45rem;
-        margin-top: 1.1rem;
-      }
-
-      .chip {
-        font-size: 0.75rem;
-        padding: 0.25rem 0.7rem;
-        border-radius: 999px;
-        background: rgba(15, 23, 42, 0.7);
-        border: 1px solid rgba(148, 163, 184, 0.4);
-        color: #cbd5f5;
-      }
-
-      .bottom-bar {
-        font-size: 0.8rem;
-        color: #9ca3af;
-        margin-top: 2.2rem;
-      }
-      .bottom-bar strong {
-        color: #e5e7eb;
-      }
     </style>
   </head>
 
@@ -258,10 +181,7 @@
           CleanIT Servis • Priemyselné upratovanie
         </div>
 
-        <h1>
-          <span>Komplexné upratovacie služby</span>
-          <span>pre firmy a domácnosti</span>
-        </h1>
+        <h1>Priemyselné čistenie skladov</h1>
 
         <p class="subtitle">
           Profesionálne upratovanie hál, skladov a výrobných priestorov s viac ako
@@ -270,15 +190,15 @@
         </p>
 
         <div class="stats">
-          <div class="stat-item">
+          <div>
             <div class="stat-number">20+</div>
             <div class="stat-label">rokov skúseností v odbore</div>
           </div>
-          <div class="stat-item">
+          <div>
             <div class="stat-number">1 000+</div>
             <div class="stat-label">vyčistených priemyselných priestorov</div>
           </div>
-          <div class="stat-item">
+          <div>
             <div class="stat-number">24/7</div>
             <div class="stat-label">čistenie podľa harmonogramu klienta</div>
           </div>
@@ -290,10 +210,10 @@
           </a>
 
           <p class="cta-sub">
-            Alebo nám zavolajte na číslo
-            <strong>
-              <a class="phone-link" href="tel:+421918716377">+421 918 716 377</a>
-            </strong>
+            Alebo nám zavolajte:
+            <a href="tel:+421918716377" class="phone-link">
+              +421 918 716 377
+            </a>
           </p>
         </div>
 
@@ -305,24 +225,6 @@
 
       <aside class="right">
         <div class="overlay"></div>
-        <div class="overlay-inner">
-          <div>
-            <div class="pill">
-              <span class="pill-dot"></span>
-              Certifikované postupy čistenia
-            </div>
-            <p class="tagline">
-              Od vysokoplošného vysávania až po čistenie konštrukcií vo výškach –
-              navrhnuté tak, aby vaša prevádzka zostala v plnej prevádzke.
-            </p>
-            <div class="chips">
-              <span class="chip">Čistenie skladových hál</span>
-              <span class="chip">Výškové čistenie konštrukcií</span>
-              <span class="chip">Odstraňovanie prachu a nečistôt</span>
-              <span class="chip">Pravidelná údržba</span>
-            </div>
-          </div>
-        </div>
       </aside>
     </main>
   </body>

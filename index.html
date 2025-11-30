@@ -2,13 +2,12 @@
 <html lang="sk">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>
       CleanIT Servis - 20 Rokov Skúseností v Priemyselnom Upravovaní | Slovensko
     </title>
+
     <meta
       name="description"
       content="Profesionálne priemyselné upratovanie s 20-ročnou praxou. Sklady, výrobné haly, logistické centrá a domácnosti. Industriálna presnosť, flexibilita 24/7. Celé Slovensko."
@@ -41,11 +40,7 @@
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap"
       rel="stylesheet"
@@ -84,7 +79,7 @@
         }
       }
       .left {
-        padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+        padding: 2.5rem;
       }
       .badge {
         display: inline-flex;
@@ -107,17 +102,20 @@
       }
       h1 {
         font-size: 2.4rem;
-        line-height: 1.1;
+        line-height: 1.15;
         margin-bottom: 0.9rem;
       }
       h1 span {
         color: #22c55e;
+        display: block;
       }
+
       .subtitle {
         font-size: 1.05rem;
         color: #9ca3af;
         margin-bottom: 1.8rem;
       }
+
       .stats {
         display: flex;
         flex-wrap: wrap;
@@ -136,6 +134,7 @@
         font-size: 0.85rem;
         color: #9ca3af;
       }
+
       .cta-box {
         display: flex;
         flex-wrap: wrap;
@@ -156,6 +155,7 @@
       .cta-main:hover {
         background: #16a34a;
       }
+
       .cta-sub {
         font-size: 0.9rem;
         color: #9ca3af;
@@ -163,13 +163,22 @@
       .cta-sub strong {
         color: #e5e7eb;
       }
+      .phone-link {
+        color: #e5e7eb;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .phone-link:hover {
+        text-decoration: underline;
+      }
+
       .right {
         position: relative;
         background: radial-gradient(circle at top left, #22c55e20, transparent 60%),
-          url("https://images.pexels.com/photos/4484078/pexels-photo-4484078.jpeg?auto=compress&cs=tinysrgb&w=1200")
-            center/cover no-repeat;
+          url("./cleanit-warehouse.jpg") center/cover no-repeat;
         min-height: 260px;
       }
+
       .overlay {
         position: absolute;
         inset: 0;
@@ -179,6 +188,7 @@
           rgba(15, 23, 42, 0.2)
         );
       }
+
       .overlay-inner {
         position: relative;
         height: 100%;
@@ -187,11 +197,13 @@
         flex-direction: column;
         justify-content: space-between;
       }
+
       .tagline {
         font-size: 0.95rem;
         color: #e5e7eb;
         max-width: 260px;
       }
+
       .pill {
         display: inline-flex;
         align-items: center;
@@ -203,18 +215,21 @@
         font-size: 0.8rem;
         color: #e5e7eb;
       }
+
       .pill-dot {
         width: 0.45rem;
         height: 0.45rem;
         border-radius: 999px;
         background: #22c55e;
       }
+
       .chips {
         display: flex;
         flex-wrap: wrap;
         gap: 0.45rem;
         margin-top: 1.1rem;
       }
+
       .chip {
         font-size: 0.75rem;
         padding: 0.25rem 0.7rem;
@@ -223,6 +238,7 @@
         border: 1px solid rgba(148, 163, 184, 0.4);
         color: #cbd5f5;
       }
+
       .bottom-bar {
         font-size: 0.8rem;
         color: #9ca3af;
@@ -230,17 +246,6 @@
       }
       .bottom-bar strong {
         color: #e5e7eb;
-      }
-      @media (max-width: 900px) {
-        .left {
-          padding: 2rem 1.6rem 2.2rem 1.6rem;
-        }
-        .right {
-          order: -1;
-        }
-        .bottom-bar {
-          margin-top: 1.4rem;
-        }
       }
     </style>
   </head>
@@ -254,7 +259,8 @@
         </div>
 
         <h1>
-          <span>Priemyselné čistenie skladov</span>
+          <span>Komplexné upratovacie služby</span>
+          <span>pre firmy a domácnosti</span>
         </h1>
 
         <p class="subtitle">
@@ -279,15 +285,14 @@
         </div>
 
         <div class="cta-box">
-          <!-- GOMB = EMAIL -->
           <a class="cta-main" href="mailto:dopyt@cleanitservis.sk">
             Nezáväzná cenová ponuka
           </a>
-          <!-- ALATTA A SZÁM, SZINTÉN KATTINTHATÓ HÍVÁS -->
+
           <p class="cta-sub">
             Alebo nám zavolajte na číslo
             <strong>
-              <a href="tel:+421918716377">+421 918 716 377</a>
+              <a class="phone-link" href="tel:+421918716377">+421 918 716 377</a>
             </strong>
           </p>
         </div>

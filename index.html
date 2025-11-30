@@ -1,327 +1,180 @@
 <!DOCTYPE html>
 <html lang="sk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>CleanIT Servis - 20 Rokov Skúseností v Priemyselnom Upravovaní | Slovensko</title>
-    <meta
-      name="description"
-      content="Profesionálne priemyselné upratovanie s 20-ročnou praxou. Sklady, výrobné haly, logistické centrá a domácnosti. Industriálna presnosť, flexibilita 24/7. Celé Slovensko."
-    />
-    <meta
-      name="keywords"
-      content="priemyselné upratovanie, upratovanie skladov, čistenie hál, upratovanie domov, upratovanie bytov, profesionálne upratovanie Slovensko"
-    />
-    <meta name="author" content="CleanIT Servis" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CleanIT Servis - 20 Rokov Skúseností v Priemyselnom Upravovaní | Slovensko</title>
 
-    <meta
-      property="og:title"
-      content="CleanIT Servis - Priemyselné Upratovanie | 20 Rokov Skúseností"
-    />
-    <meta
-      property="og:description"
-      content="Profesionálne priemyselné upratovanie s 20-ročnou praxou. Industriálna presnosť pre váš domov."
-    />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://lovable.dev/opengraph-image-p98pog.png"
-    />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter",
+        "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #020617, #0f172a);
+      color: #e5e7eb;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.5rem;
+    }
+    .page {
+      max-width: 1080px;
+      width: 100%;
+      background: rgba(15, 23, 42, 0.96);
+      border-radius: 1.5rem;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      position: relative;
+    }
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta
-      name="twitter:image"
-      content="https://lovable.dev/opengraph-image-p98pog.png"
-    />
+    /* LOGÓ – A KÉP FELSŐ KÖZEPÉRE */
+    .logo-top {
+      position: absolute;
+      top: 20px;
+      right: 20px; /* A jobb felső területre helyezéshez */
+      z-index: 30;
+      width: 150px; 
+      opacity: 1;
+    }
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap"
-      rel="stylesheet"
-    />
-
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter",
-          "Segoe UI", sans-serif;
-        background: linear-gradient(135deg, #020617, #0f172a);
-        color: #e5e7eb;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 2rem 1.5rem;
-      }
+    @media (max-width: 900px) {
       .page {
-        max-width: 1080px;
-        width: 100%;
-        background: rgba(15, 23, 42, 0.96);
-        border-radius: 1.5rem;
-        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
-        overflow: hidden;
-        display: grid;
-        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+        grid-template-columns: 1fr;
       }
-      @media (max-width: 900px) {
-        .page {
-          grid-template-columns: 1fr;
-        }
-      }
-      .left {
-        padding: 2.5rem 2.5rem 2.5rem 2.5rem;
-      }
-      .badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.4rem;
-        padding: 0.25rem 0.75rem;
-        border-radius: 999px;
-        font-size: 0.8rem;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        border: 1px solid rgba(148, 163, 184, 0.7);
-        color: #e5e7eb;
-        margin-bottom: 1.25rem;
-      }
-      .badge-dot {
-        width: 0.4rem;
-        height: 0.4rem;
-        border-radius: 999px;
-        background: #22c55e;
-      }
-      h1 {
-        font-size: 2.4rem;
-        line-height: 1.1;
-        margin-bottom: 0.9rem;
-        color: #22c55e; /* zöld cím */
-      }
-      .subtitle {
-        font-size: 1.05rem;
-        color: #9ca3af;
-        margin-bottom: 1.8rem;
-      }
-      .stats {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1.5rem;
-        margin-bottom: 2rem;
-      }
-      .stat-item {
-        min-width: 120px;
-      }
-      .stat-number {
-        font-size: 1.6rem;
-        font-weight: 600;
-        color: #e5e7eb;
-      }
-      .stat-label {
-        font-size: 0.85rem;
-        color: #9ca3af;
-      }
-      .cta-box {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        align-items: center;
-      }
-      .cta-main {
-        background: #22c55e;
-        color: #052e16;
-        padding: 0.85rem 1.6rem;
-        border-radius: 999px;
-        font-weight: 600;
-        font-size: 0.95rem;
-        text-decoration: none;
-        border: none;
-        cursor: pointer;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .cta-main:hover {
-        background: #16a34a;
-      }
-      .cta-sub {
-        font-size: 0.9rem;
-        color: #9ca3af;
-      }
-      .cta-sub strong {
-        color: #e5e7eb;
-      }
-      .cta-sub a {
-        color: inherit;
-        text-decoration: none;
-      }
-      .cta-sub a:hover {
-        text-decoration: underline;
-      }
-      .right {
-        position: relative;
-        /* ÚJ kép – Pixabay linkkel */
-        background: radial-gradient(circle at top left, #22c55e20, transparent 60%),
-          url("https://pixabay.com/get/g17182dcd54a780c49d8f0f2346bed6b8e46fc266d9f26ddeb9132686b740e21d6646715097c320b8fd91ff51be74f5db5fe1cbd1533d7ce60a4a9859199f65e8_1280.jpg")
-            center/cover no-repeat;
-        min-height: 260px;
-      }
-      .overlay {
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(
-          120deg,
-          rgba(15, 23, 42, 0.9),
-          rgba(15, 23, 42, 0.2)
-        );
-      }
-      .overlay-inner {
-        position: relative;
-        height: 100%;
-        padding: 2.2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-      }
-      .tagline {
-        font-size: 0.95rem;
-        color: #e5e7eb;
-        max-width: 260px;
-      }
-      .pill {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.45rem;
-        padding: 0.4rem 0.9rem;
-        border-radius: 999px;
-        background: rgba(15, 23, 42, 0.85);
-        border: 1px solid rgba(148, 163, 184, 0.6);
-        font-size: 0.8rem;
-        color: #e5e7eb;
-      }
-      .pill-dot {
-        width: 0.45rem;
-        height: 0.45rem;
-        border-radius: 999px;
-        background: #22c55e;
-      }
-      .chips {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.45rem;
-        margin-top: 1.1rem;
-      }
-      .chip {
-        font-size: 0.75rem;
-        padding: 0.25rem 0.7rem;
-        border-radius: 999px;
-        background: rgba(15, 23, 42, 0.7);
-        border: 1px solid rgba(148, 163, 184, 0.4);
-        color: #cbd5f5;
-      }
-      .bottom-bar {
-        font-size: 0.8rem;
-        color: #9ca3af;
-        margin-top: 2.2rem;
-      }
-      .bottom-bar strong {
-        color: #e5e7eb;
-      }
-      @media (max-width: 900px) {
-        .left {
-          padding: 2rem 1.6rem 2.2rem 1.6rem;
-        }
-        .right {
-          order: -1;
-        }
-        .bottom-bar {
-          margin-top: 1.4rem;
-        }
-      }
-    </style>
-  </head>
+    }
 
-  <body>
-    <main class="page">
-      <section class="left">
-        <div class="badge">
-          <span class="badge-dot"></span>
-          CleanIT Servis • Priemyselné upratovanie
+    .left {
+      padding: 2.5rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      color: #e5e7eb;
+      margin-bottom: 1.25rem;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      line-height: 1.1;
+      margin-bottom: 0.9rem;
+      color: #22c55e;
+    }
+
+    .subtitle {
+      font-size: 1.05rem;
+      color: #9ca3af;
+      margin-bottom: 1.8rem;
+    }
+
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .stat-item {
+      min-width: 120px;
+    }
+    .stat-number {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #e5e7eb;
+    }
+    .stat-label {
+      font-size: 0.85rem;
+      color: #9ca3af;
+    }
+
+    .cta-main {
+      background: #22c55e;
+      color: #052e16;
+      padding: 0.85rem 1.6rem;
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .right {
+      position: relative;
+      background: radial-gradient(circle at top left, #22c55e20, transparent 60%),
+        url("https://pixabay.com/get/g17182dcd54a780c49d8f0f2346bed6b8e46fc266d9f26ddeb9132686b740e21d6646715097c320b8fd91ff51be74f5db5fe1cbd1533d7ce60a4a9859199f65e8_1280.jpg")
+          center/cover no-repeat;
+      min-height: 260px;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        120deg,
+        rgba(15, 23, 42, 0.9),
+        rgba(15, 23, 42, 0.2)
+      );
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+
+    <!-- LOGO → JOBB FELSŐ RÉSZEN -->
+    <img src="/Clean_it_logo.png" alt="CleanIT Logo" class="logo-top">
+
+    <section class="left">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        CleanIT Servis • Priemyselné upratovanie
+      </div>
+
+      <h1>Upratovacie služby pre firmy a domácnosti</h1>
+
+      <p class="subtitle">
+        Profesionálne upratovanie hál, skladov a výrobných priestorov s viac ako
+        20-ročnou praxou. Bez prerušenia prevádzky, s dôrazom na bezpečnosť
+        a dlhodobú udržateľnosť.
+      </p>
+
+      <div class="stats">
+        <div class="stat-item">
+          <div class="stat-number">20+</div>
+          <div class="stat-label">rokov skúseností v odbore</div>
         </div>
-
-        <h1>Upratovacie služby pre firmy a domácnosti</h1>
-
-        <p class="subtitle">
-          Profesionálne upratovanie hál, skladov a výrobných priestorov s viac ako
-          20-ročnou praxou. Bez prerušenia prevádzky, s dôrazom na bezpečnosť
-          a dlhodobú udržateľnosť.
-        </p>
-
-        <div class="stats">
-          <div class="stat-item">
-            <div class="stat-number">20+</div>
-            <div class="stat-label">rokov skúseností v odbore</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">1 000+</div>
-            <div class="stat-label">vyčistených priemyselných priestorov</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">24/7</div>
-            <div class="stat-label">čistenie podľa harmonogramu klienta</div>
-          </div>
+        <div class="stat-item">
+          <div class="stat-number">1 000+</div>
+          <div class="stat-label">vyčistených priemyselných priestorov</div>
         </div>
-
-        <div class="cta-box">
-          <a class="cta-main" href="mailto:dopyt@cleanitservis.sk">
-            Nezáväzná cenová ponuka
-          </a>
-          <p class="cta-sub">
-            Alebo nám zavolajte na číslo
-            <strong>
-              <a href="tel:+421918716377">+421 918 716 377</a>
-            </strong>
-          </p>
+        <div class="stat-item">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">čistenie podľa harmonogramu klienta</div>
         </div>
+      </div>
 
-        <p class="bottom-bar">
-          <strong>CleanIT Servis</strong> • Špecializované priemyselné upratovanie
-          skladov, hál a logistických centier.
-        </p>
-      </section>
+      <a class="cta-main" href="mailto:dopyt@cleanitservis.sk">
+        Nezáväzná cenová ponuka
+      </a>
+    </section>
 
-      <aside class="right">
-        <div class="overlay"></div>
-        <div class="overlay-inner">
-          <div>
-            <div class="pill">
-              <span class="pill-dot"></span>
-              Certifikované postupy čistenia
-            </div>
-            <p class="tagline">
-              Od vysokoplošného vysávania až po čistenie konštrukcií vo výškach –
-              navrhnuté tak, aby vaša prevádzka zostala v plnej prevádzke.
-            </p>
-            <div class="chips">
-              <span class="chip">Čistenie skladových hál</span>
-              <span class="chip">Výškové čistenie konštrukcií</span>
-              <span class="chip">Odstraňovanie prachu a nečistôt</span>
-              <span class="chip">Pravidelná údržba</span>
-            </div>
-          </div>
-        </div>
-      </aside>
-    </main>
-  </body>
+    <aside class="right">
+      <div class="overlay"></div>
+    </aside>
+
+  </main>
+</body>
 </html>
